@@ -87,3 +87,14 @@ C       F
 80.000  176.000
 100.000 212.000
 ```
+### Exercise 1-5
+Modify the temperature conversion program to print the table in reverse order, 
+that is, from 300 degrees to 0.
+
+In order to this exercise, I flip the parameter of `for` command to something like this
+```c
+for (fahrenheit = 300; fahrenheit >= 0; fahrenheit -= 50) {
+  // ...
+}
+```
+The parameter starts with declaration of initial value of the `fahrenheit` variable. Then, the second parameter `fahrenheit >= 0` is used to terminate the for loop, and `fahrenheit -= 50` used as a controller on how much decrement we operate in this loop.
